@@ -1,6 +1,5 @@
 name: Deploy Slides
 
-# mainブランチにpushされたら実行する
 on:
   push:
     branches:
@@ -14,21 +13,18 @@ jobs:
       contents: write
 
     steps:
-      # 1. リポジトリのファイルをチェックアウト（持ってくる）
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # 2. Marpを使ってHTMLに変換する
-      - name: Build HTML
-        uses: marp-team/action-marp-cli@v2
-        with:
-          source: presentation.md  # 変換元のファイル名
-          output: index.html       # 書き出すファイル名
-          theme-set: style.css     # ★重要: カスタムCSSを読み込ませる
-
-      # 3. 作成されたindex.htmlと画像などを、gh-pagesブランチにアップロード
+      # 修正箇所: Actionを使わず、直接コマンドでインストールして変換する
+      - name: Convert Markdown to HTML
+        run: |
+          # Marpの最新版を一時的にインストールして実行
+          npx @marp-team/marp-cli@latest presentation.md -o index.html --theme-set style.css
+          
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  # 現在のフォルダにあるものをすべて公開用ブランチへ
+          publish_dir: ./
+          publish_branch: gh-pages
