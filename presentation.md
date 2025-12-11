@@ -1,7 +1,8 @@
 ---
 marp: true
-theme: my-brand  
+theme: my-brand
 paginate: true
+html: true
 ---
 
 # ハンズオン講習
@@ -24,7 +25,7 @@ _paginate: false
 
 - WebDINO Japan ワークショップファシリテータ
 - 東京大学大学院 修士1年
-- 情報とアートの融合分野について勉強中
+- 情報工学とアートの融合分野について勉強中
 - フラッグフットボーラー
 
 </div>
@@ -71,16 +72,17 @@ Chromeなどのブラウザで[https://chirimen.org/pizero/](https://chirimen.or
 
 ---
 ![bg](images/bg1.png)
-## 2.1 ステップ0 （機材準備）
+## 本日使う機材の確認
 <div class="col-2">
 
 <div>
 
+- WiFiに繋がったPC
 - Raspberry Pi Zero 2WH
-- ケーブル
-- 赤いケース
+    - ケーブル
+    - 赤いケース
 - スターターキット
-- micro SDカード
+- microSDカード
 </div>
 
 <div>
@@ -89,10 +91,55 @@ Chromeなどのブラウザで[https://chirimen.org/pizero/](https://chirimen.or
 
 </div>
 
+</div>
+
+<div class="link-box">
+
+[👉 2.1 ステップ0（物品準備、PCをWiFiに接続）](https://chirimen.org/pizero/chapter_2-1)
+
+</div>
+
 ---
 ![bg](images/bg1.png)
-## 2.2 ステップ1（ターミナル接続）
+## Raspberry Pi Zeroを起動させる
+1. microSDカードをRaspberry Pi Zeroに差し込む
+2. PCの USB と Raspberry Pi Zero の USB OTGポートを USBケーブルで繋ぐ
+<b>（ポートの位置に注意！）</b>
+
 ![center width:600px](images/PiZeroW_OTG.jpg)
+
+<div class="link-box">
+
+[👉 2.2 ステップ1（ターミナル接続）](https://chirimen.org/pizero/chapter_2-2)
+
+</div>
+
+---
+![bg](images/bg1.png)
+## ターミナルに接続する
+
+1. [ターミナル](https://www.chirimen.org/PiZeroWebSerialConsole/PiZeroWebSerialConsole.html)にアクセスする
+2. [Connect and Login PiZero]をクリックする
+3. ポートを選択する
+
+![width:600px](images/serialdialog.png)
+
+4. コンソールに```pi@raspberrypi:~$```と表示されるまで待つ
+
+
+
+<div class="link-box">
+
+[👉 2.2 ステップ1（ターミナル接続）](https://chirimen.org/pizero/chapter_2-2)
+
+</div>
+
+---
+
+## WiFiの設定
+
+
+
 ---
 
 # まとめ
