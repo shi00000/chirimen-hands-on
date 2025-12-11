@@ -1,0 +1,77 @@
+/* @theme my-brand */
+@import 'default'; /* 基本のデザイン（default）を継承する */
+
+/* --- 以下、前回のカスタムCSSを記述 --- */
+
+section {
+    background-color: #ffffff;
+    color: #353e47;
+    padding-top: 120px;
+}
+
+h1 {
+    color: #353e47;
+    font-size: 2.0rem;
+}
+
+h2 {
+    color: #353e47;
+    font-size: 1.5rem;
+}
+
+/* 全ページの右上にロゴ */
+
+section::before {
+  content: '';
+  background-image: url(images/makers_logo.png); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 100px; 
+  height: 100px;
+}
+
+/* 2列レイアウト用の箱を作る設定 */
+.col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 左:右 = 1:1 で分割 */
+  gap: 30px; /* ★ここで真ん中の余白（マージン）を調整できます */
+  align-items: center; /* 上下の真ん中に配置 */
+}
+
+/* 右側の画像を見やすくする設定 */
+.col-2 img {
+  width: 100%;       /* 箱の中で横幅いっぱいに表示 */
+  object-fit: contain; /* 縦横比を崩さない */
+  /* border: 1px solid #ccc; */ /* ←画像の枠線が欲しい場合はこのコメントを外す */
+}
+
+section.clean::before {
+  content: none;
+}
+
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+
+section.pad {
+  padding-top: 50px;
+}
+
+.link-box {
+  position: absolute;
+  bottom: 20px;    /* 下からの距離 */
+  left: 45px;      /* 左からの距離 */
+  font-size: 20px; /* 文字サイズ（少し小さめがおすすめ） */
+  z-index: 100;    /* 背景などに隠れないようにする */
+}
+
+/* リンク自体の色などを整える（お好みで） */
+.link-box a {
+  color: #0056b3;       /* ブランドカラーなどに合わせる */
+  text-decoration: none; /* 下線を消す */
+  border-bottom: 1px solid #0056b3; /* 控えめな下線をつける */
+}
