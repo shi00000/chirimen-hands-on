@@ -12,11 +12,13 @@ html: true
 <!--
 _class: clean
 _paginate: false
--->
+
 
 ![bg](images/makers_tottori.png)
 
 ---
+
+-->
 
 ## 講師の自己紹介
 <div class="col-2">
@@ -32,7 +34,7 @@ _paginate: false
 
 <div>
 
-![width:350px](images/exhibition.JPG) 
+![width:600px](images/self-intro.png) 
 
 </div>
 
@@ -42,6 +44,7 @@ _paginate: false
 
 ## 本日の流れ
 - CHIRIMENでラズパイを使えるようになる
+ー休憩ー
 - GPIOとI2Cを使えるようになる
 - スマホから遠隔制御してみる
 - ラズパイをPCに繋がずに動かしてみる（常駐プログラム化）
@@ -228,6 +231,7 @@ blink();
 - "hello.js" を実行する方法
 →```node hello.js```とコンソールに入力しEnter
 
+<br>
 
 - 停止する方法
 →コンソール上で```Ctrl```+```C```
@@ -255,6 +259,9 @@ CHIRIMEN panel > Get Examples > hello-real-world (L チカ) > JS GET
 - Raspberry Pi Zeroをセットアップした
 - chirimenの基本的な使い方を学んだ
 - LEDの制御方法を学んだ
+
+<br>
+これで皆さんもIoT開発者！👩‍💻
 
 ---
 
@@ -304,8 +311,6 @@ _class: pad
 
 ## いろいろなデバイスを自由に試してみよう！
 自由に進めてもらって OK 👌
-
----
 
 
 
