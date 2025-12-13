@@ -190,7 +190,7 @@ Chromeなどのブラウザで[https://chirimen.org/pizero/](https://chirimen.or
 ![bg](images/bg1.png)
 ## ブレッドボードでの配線
 
-![width:680](images/led-blink.dio.png)
+![width:1000](images/led_pin.png)
 
 <div class="link-box">
 
