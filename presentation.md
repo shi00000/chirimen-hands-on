@@ -46,6 +46,7 @@ _paginate: false
 - CHIRIMENでラズパイを使えるようになる
 ー休憩ー
 - GPIOとI2Cを使えるようになる
+ー休憩ー
 - スマホから遠隔制御してみる
 - ラズパイをPCに繋がずに動かしてみる（常駐プログラム化）
 
@@ -106,7 +107,8 @@ Chromeなどのブラウザで[https://chirimen.org/pizero/](https://chirimen.or
 ![bg](images/bg1.png)
 ## Raspberry Pi Zeroを起動させる
 1. microSDカードをRaspberry Pi Zeroに差し込む
-2. PCの USB と Raspberry Pi Zero の USB OTGポートを USBケーブルで繋ぐ
+2. Raspberry Pi Zeroを赤いケースに入れる
+3. PCの USB と Raspberry Pi Zero の USB OTGポートを USBケーブルで繋ぐ
 <b>（ポートの位置に注意！）</b>
 
 ![center width:600px](images/PiZeroW_OTG.jpg)
