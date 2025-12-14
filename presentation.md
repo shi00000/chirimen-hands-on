@@ -313,16 +313,47 @@ _class: pad
 
 ## いろいろなデバイスを自由に試してみよう！
 自由に進めてもらって OK 👌
+デバイスリスト：https://chirimen.org/pizero/esm-examples/
 
+---
+<!--
+_class: pad
+-->
 
+## I2Cで複数のデバイスを扱う
+
+それぞれのモジュールの VCC/GND/SDA/SCL を並列接続
+
+![width:350](images/bh1750-and-adt7410.webp)
 
 ---
 
+## 何から始めればよいか分からない人へ
+
+<b>＜単体で動作確認できるI2Cセンサー＞</b>
+![width:1200](images/I2Csensor.jpg)
+
+1. サンプルを実行し、センサの値が取得できることを確認する
+2. [5.4 GPIO と I2Cセンサーを組み合わせる](https://chirimen.org/pizero/chapter_5-4)を参考にセンサの値に応じてLEDのON/OFFを切り替えてみよう
+
+---
+<!--
+_class: pad
+-->
+
 ## ⚠️片付け注意事項
 
-- 借りたセンサーをすべて返却します
-- Raspberry Pi の電源を切ります
-- microSD カードは必ず抜き取り、CHIRIMEN スターターキットを片付けます
-- クリアボックスを片付けます
-- できるだけ元の状態に戻してください
-(詳しくは会場のスタッフが案内します)
+### ＜返却するもの＞
+
+
+- 前から借りたセンサーやパーツ
+- Raspberry Pi Zeroセット（机）
+    - Raspberry Pi Zero<b>（SDカードは抜く）</b>
+    - USBケーブル
+    - 赤いケース
+
+
+### ＜持ち帰るもの＞
+- スターターキット（内容物を確認する）
+- microSD カード
+
