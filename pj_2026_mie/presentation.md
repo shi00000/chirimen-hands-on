@@ -14,7 +14,7 @@ _class: clean
 _paginate: false
 
 
-![bg](images/makers_tottori.png)
+![bg](../images/makers_tottori.png)
 
 ---
 
@@ -26,15 +26,14 @@ _paginate: false
 <div>
 
 - WebDINO Japan ワークショップファシリテータ
-- 東京大学大学院 修士1年
-- 情報工学とアートの融合分野について勉強中
-- フラッグフットボーラー
+- 東京大学大学院 修士2年
+- 3Dプリンタを使った新しいセンサシステムについて勉強中
 
 </div>
 
 <div>
 
-![width:600px](images/self-intro.png) 
+![width:600px](../images/self-intro.png) 
 
 </div>
 
@@ -75,7 +74,7 @@ Chromeなどのブラウザで[https://chirimen.org/pizero/](https://chirimen.or
 「chirimen pizero」などで検索🔍
 
 ---
-![bg](images/bg1.png)
+![bg](../images/bg1.png)
 ## 本日使う機材の確認
 <div class="col-2">
 
@@ -91,7 +90,7 @@ Chromeなどのブラウザで[https://chirimen.org/pizero/](https://chirimen.or
 
 <div>
 
-![center width:600px](images/PartsList2.svg)
+![center width:600px](../images/PartsList2.svg)
 
 </div>
 
@@ -104,14 +103,14 @@ Chromeなどのブラウザで[https://chirimen.org/pizero/](https://chirimen.or
 </div>
 
 ---
-![bg](images/bg1.png)
+![bg](../images/bg1.png)
 ## Raspberry Pi Zeroを起動させる
 1. microSDカードをRaspberry Pi Zeroに差し込む
 2. Raspberry Pi Zeroを赤いケースに入れる
 3. PCの USB と Raspberry Pi Zero の USB OTGポートを USBケーブルで繋ぐ
 <b>（ポートの位置に注意！）</b>
 
-![center width:600px](images/PiZeroW_OTG.jpg)
+![center width:600px](../images/PiZeroW_OTG.jpg)
 
 <div class="link-box">
 
@@ -120,14 +119,14 @@ Chromeなどのブラウザで[https://chirimen.org/pizero/](https://chirimen.or
 </div>
 
 ---
-![bg](images/bg1.png)
+![bg](../images/bg1.png)
 ## ターミナルに接続する
 
 1. [ターミナル](https://www.chirimen.org/PiZeroWebSerialConsole/PiZeroWebSerialConsole.html)にアクセスする
 2. [Connect and Login PiZero]をクリックする
 3. ポートを選択する
 
-![width:600px](images/serialdialog.png)
+![width:600px](../images/serialdialog.png)
 
 4. コンソールに```pi@raspberrypi:~$```と表示されるまで待つ
 
@@ -140,7 +139,7 @@ Chromeなどのブラウザで[https://chirimen.org/pizero/](https://chirimen.or
 </div>
 
 ---
-![bg](images/bg1.png)
+![bg](../images/bg1.png)
 ## WiFiの設定
 
 1. [wifi panel] > [SSID] [PASS PHRASE] を入力
@@ -159,7 +158,7 @@ Chromeなどのブラウザで[https://chirimen.org/pizero/](https://chirimen.or
 </div>
 
 ---
-![bg](images/bg1.png)
+![bg](../images/bg1.png)
 ## まずはLチカ！
 <div class="col-2">
 <div>
@@ -174,7 +173,7 @@ Chromeなどのブラウザで[https://chirimen.org/pizero/](https://chirimen.or
 
 <div>
 
-![center width:600px](images/PartsList2.svg)
+![center width:600px](../images/PartsList2.svg)
 
 </div>
 
@@ -187,10 +186,10 @@ Chromeなどのブラウザで[https://chirimen.org/pizero/](https://chirimen.or
 </div>
 
 ---
-![bg](images/bg1.png)
+![bg](../images/bg1.png)
 ## ブレッドボードでの配線
 
-![width:1000](images/led_pin.png)
+![width:1000](../images/led_pin.png)
 
 <div class="link-box">
 
@@ -199,7 +198,7 @@ Chromeなどのブラウザで[https://chirimen.org/pizero/](https://chirimen.or
 </div>
 
 ---
-![bg](images/bg1.png)
+![bg](../images/bg1.png)
 ## プログラムを書く
 
 [myApp] > [移動] > [Create New Text] > "hello.js" と入力 > コピー&ペースト > [Save]
@@ -227,7 +226,7 @@ blink();
 ```
 
 ---
-![bg](images/bg1.png)
+![bg](../images/bg1.png)
 ## プログラムを実行する
 
 - "hello.js" を実行する方法
@@ -245,7 +244,7 @@ blink();
 </div>
 
 ---
-![bg](images/bg1.png)
+![bg](../images/bg1.png)
 ## サンプルコードのダウンロード
 CHIRIMEN panel > Get Examples > hello-real-world (L チカ) > JS GET
 
@@ -256,7 +255,7 @@ CHIRIMEN panel > Get Examples > hello-real-world (L チカ) > JS GET
 
 # ここまでのまとめ
 
-![bg](images/bg1.png)
+![bg](../images/bg1.png)
 
 - Raspberry Pi Zeroをセットアップした
 - chirimenの基本的な使い方を学んだ
@@ -316,6 +315,14 @@ _class: pad
 デバイスリスト：https://chirimen.org/pizero/esm-examples/
 
 ---
+
+## AIアシスタントを活用する
+コードをアレンジしたい場合や、思い通りに動かない場合はAIアシスタントに質問できます
+
+
+[👉 8. AIアシスタントを活用する](https://chirimen.org/pizero/using-ai-assistant)
+
+---
 <!--
 _class: pad
 -->
@@ -324,14 +331,14 @@ _class: pad
 
 それぞれのモジュールの VCC/GND/SDA/SCL を並列接続
 
-![width:350](images/bh1750-and-adt7410.webp)
+![width:350](../images/bh1750-and-adt7410.webp)
 
 ---
 
 ## 何から始めればよいか分からない人へ
 
 <b>＜単体で動作確認できるI2Cセンサー＞</b>
-![width:1200](images/I2Csensor.jpg)
+![width:1200](../images/I2Csensor.jpg)
 
 1. サンプルを実行し、センサの値が取得できることを確認する
 2. [5.4 GPIO と I2Cセンサーを組み合わせる](https://chirimen.org/pizero/chapter_5-4)を参考にセンサの値に応じてLEDのON/OFFを切り替えてみよう
