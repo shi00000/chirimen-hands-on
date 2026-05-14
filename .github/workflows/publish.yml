@@ -23,12 +23,17 @@ jobs:
           if [ -d "images"]; then
             cp -r images dist/
           fi
-                    
-          for dir in pj_*; do
-            if [ -d "$dir" ]; then
-              echo "Processing $dir..."
-              mkdir -p "dist/$dir"
-              npx @marp-team/marp-cli@latest "$dir/presentation.md" -o "dist/$dir/index.html" --theme-set style.css
+
+          for dir in */; do
+            if [ "$dir" != "dist/" ] && [ "$dir" != ".github/" ] && [ "$dir" != "images/" ]; then
+              dirname=$(basename "$dir")
+              md_file=$(ls "$dirname"/*.md | head -n 1)
+              
+              if [ -n "$md_file" ]; then
+                mkdir -p "dist/$dirname"
+                # ここで変換
+                npx @marp-team/marp-cli@latest "$md_file" -o "dist/$dirname/index.html" --theme-set style.css
+              fi
             fi
           done
 
