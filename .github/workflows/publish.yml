@@ -20,7 +20,7 @@ jobs:
         run: |
           mkdir dist
           
-          for dir in project-*; do
+          for dir in pj-*; do
             if [ -d "$dir" ]; then
               echo "Processing $dir..."
               mkdir -p "dist/$dir"
