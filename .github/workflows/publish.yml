@@ -19,11 +19,12 @@ jobs:
       - name: Convert Markdown to HTML (Multi-project)
         run: |
           mkdir dist
-
-          if [ -d "images"]; then
+          
+          # ルートの images フォルダを dist 直下にコピー
+          if [ -d "images" ]; then
             cp -r images dist/
           fi
-
+          
           for dir in */; do
             if [ "$dir" != "dist/" ] && [ "$dir" != ".github/" ] && [ "$dir" != "images/" ]; then
               dirname=$(basename "$dir")
@@ -31,8 +32,16 @@ jobs:
               
               if [ -n "$md_file" ]; then
                 mkdir -p "dist/$dirname"
-                # ここで変換
-                npx @marp-team/marp-cli@latest "$md_file" -o "dist/$dirname/index.html" --theme-set style.css
+                
+                # --allow-local-files を追加し、変換を実行
+                # 画像を各フォルダにコピーしなくても済むように、
+                # dist/images (一つ上の階層) を見に行くパスを維持します
+                npx @marp-team/marp-cli@latest "$md_file" \
+                  -o "dist/$dirname/index.html" \
+                  --theme-set style.css \
+                  --allow-local-files
+                
+                echo "Converted $dirname"
               fi
             fi
           done
