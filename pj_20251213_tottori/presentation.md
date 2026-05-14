@@ -58,13 +58,13 @@ _class: pad
 
 ## CHIRIMENとは
 
-![center width:800px](images/CHIRIMENforRaspberryPi3.webp)
+![center width:800px](../images/CHIRIMENforRaspberryPi3.webp)
 
 JavaScriptでセンサやモータなどのハードウェアデバイスを制御できるようにしたプロとタイピング環境。
 <b>→Webとハードウェアを簡単に連携させることができる！</b>
 
 ---
-![bg](images/bg1.png)
+![bg](../images/bg1.png)
 
 ## CHIRIMENチュートリアルを開く
 

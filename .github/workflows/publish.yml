@@ -19,7 +19,11 @@ jobs:
       - name: Convert Markdown to HTML (Multi-project)
         run: |
           mkdir dist
-          
+
+          if [ -d "images"]; then
+            cp -r images dist/
+          fi
+                    
           for dir in pj_*; do
             if [ -d "$dir" ]; then
               echo "Processing $dir..."
