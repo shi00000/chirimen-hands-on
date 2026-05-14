@@ -16,15 +16,21 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # 修正箇所: Actionを使わず、直接コマンドでインストールして変換する
-      - name: Convert Markdown to HTML
+      - name: Convert Markdown to HTML (Multi-project)
         run: |
-          # Marpの最新版を一時的にインストールして実行
-          npx @marp-team/marp-cli@latest presentation.md -o index.html --theme-set style.css
+          mkdir dist
           
+          for dir in project-*; do
+            if [ -d "$dir" ]; then
+              echo "Processing $dir..."
+              mkdir -p "dist/$dir"
+              npx @marp-team/marp-cli@latest "$dir/presentation.md" -o "dist/$dir/index.html" --theme-set style.css
+            fi
+          done
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+          publish_dir: ./dist
           publish_branch: gh-pages
