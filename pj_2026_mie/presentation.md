@@ -316,6 +316,7 @@ _class: pad
 
 ## AIアシスタントを活用する
 コードをアレンジしたい場合や、思い通りに動かない場合はAIアシスタントに質問できます
+https://deepwiki.com/chirimen-oh/chirimen-deepwiki
 
 **質問例(※質問は日本語でOK！)**
 - 「LEDを3回点滅させるコードを書いて」
