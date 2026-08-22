@@ -27,13 +27,13 @@ _paginate: false
 
 - WebDINO Japan ワークショップファシリテータ
 - 東京大学大学院 修士2年
-- 3Dプリンタを使った新しいセンサシステムについて勉強中
+- 3Dプリンタを使ったセンサシステムについて研究中
+- 好きな食べ物：生牡蠣
 
 </div>
 
 <div>
-
-![width:600px](../images/self-intro.png) 
+<video src="../images/WhistleSense_short_demo.mov" controls></video>
 
 </div>
 
@@ -81,11 +81,11 @@ Chromeなどのブラウザで[https://chirimen.org/pizero/](https://chirimen.or
 <div>
 
 - WiFiに繋がったPC
-- Raspberry Pi Zero 2WH
+- Raspberry Pi Zero WH
     - ケーブル
     - 赤いケース
 - スターターキット
-- microSDカード
+- microSDカード（Chirimen OS v.1.6 書き込み済み）
 </div>
 
 <div>
@@ -294,10 +294,10 @@ _class: pad
 
 12:00 - 13:00　昼食休憩
 
-13:00 - 14:20　ハッカソンに向けてのアイデアワークショップ
+13:00 - 14:10　ハッカソンに向けてのアイデアワークショップ
 
 
-14:30 - 16:20　ハッカソンに向けてのチーム相談タイム
+14:20 - 16:20　ハッカソンに向けてのチーム相談タイム
 
 16:20 - 16:40　各チームの進捗発表タイム
 
@@ -308,6 +308,7 @@ _class: pad
 ---
 # ハンズオン講習 
 ## DAY2 - Raspberry Pi Zero版 CHIRIMEN (応用編)
+
 ---
 
 ## いろいろなデバイスを自由に試してみよう！
@@ -319,19 +320,13 @@ _class: pad
 ## AIアシスタントを活用する
 コードをアレンジしたい場合や、思い通りに動かない場合はAIアシスタントに質問できます
 
+**質問例(※質問は日本語でOK！)**
+- 「LEDを3回点滅させるコードを書いて」
+- 「SHT30で温度を取得するコードを書いて」
+- 「このエラーの意味を教えて：（エラーメッセージをここに貼り付ける）」
+
 
 [👉 8. AIアシスタントを活用する](https://chirimen.org/pizero/using-ai-assistant)
-
----
-<!--
-_class: pad
--->
-
-## I2Cで複数のデバイスを扱う
-
-それぞれのモジュールの VCC/GND/SDA/SCL を並列接続
-
-![width:350](../images/bh1750-and-adt7410.webp)
 
 ---
 
