@@ -33,7 +33,7 @@ _paginate: false
 </div>
 
 <div>
-<video src="../images/WhistleSense_short_demo.mov" controls></video>
+<video src="../images/WhistleSense_short_demo.mov" controls="true" width="600"></video>
 
 </div>
 
@@ -145,11 +145,8 @@ Chromeなどのブラウザで[https://chirimen.org/pizero/](https://chirimen.or
 1. [wifi panel] > [SSID] [PASS PHRASE] を入力
 2. [SET WiFi] を選択
 3. [Reboot] を選択
-4. (もう一度) ターミナルにアクセス
-5. [Connect and Login PiZero] を選択
-    - シリアルポートが表示されていれば OK ✅
-    - 起動完了まで約 2 分間かかります
-8. [接続]
+4. 青い文字が表示されればOK！
+![width:800px](../images/wifi.png)
 
 <div class="link-box">
 
