@@ -144,8 +144,7 @@ Chromeなどのブラウザで[https://chirimen.org/pizero/](https://chirimen.or
 
 1. [wifi panel] > [SSID] [PASS PHRASE] を入力
 2. [SET WiFi] を選択
-3. [Reboot] を選択
-4. 青い文字が表示されればOK！
+3. 青い文字が表示されればOK！
 ![width:800px](../images/wifi.png)
 
 <div class="link-box">
